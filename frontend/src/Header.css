@@ -1,0 +1,126 @@
+/* Header container */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  height: 95px;
+  background: linear-gradient(135deg, #00265B, #000b05); 
+  border-bottom: 1px solid rgba(255, 255, 255, 0.184);
+  color: #E8D532;
+}
+
+/* Logo Section */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+/* Responsive Logo Image */
+.logo-img {
+  height: 160px; /* Default size on desktop */
+  margin-top: 20px;
+  width: auto;
+  cursor: pointer;
+  object-fit: contain; /* Keep aspect ratio */
+}
+
+/* Menu Icon (Hamburger/Cross) */
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #E8D532;
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style-type: none;
+}
+
+.nav-links li {
+  position: relative;
+  cursor: pointer;
+  font-weight: 500;
+  color: #E8D532;
+}
+
+.nav-links a {
+  color: #E8D532;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #cccccc;
+  text-decoration: underline;
+}
+
+/* Dropdown for Services */
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: black;
+  color: white;
+  list-style-type: none;
+  padding: 10px;
+  display: none;
+}
+
+.dropdown li {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.dropdown li:hover {
+  background-color: crimson;
+}
+
+/* Show Dropdown on Hover */
+.nav-links li:hover .dropdown,
+.dropdown.show {
+  display: block;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block; /* Show menu icon on mobile */
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    z-index: 50;
+    top: 75px;
+    right: 0;
+    width: 100%;
+    background-color: rgb(0, 0, 15);
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 15px 0;
+  }
+
+  .dropdown {
+    position: relative;
+    background-color: black;
+  }
+
+  /* Adjust Logo Size on Mobile */
+  .logo-img {
+    height: 130px; /* Smaller height on mobile */
+    margin-top: 15px;
+  }
+}

@@ -1,0 +1,93 @@
+/* Section styling for the projects */
+.projects-section {
+  padding: 40px;
+  text-align: center;
+}
+
+/* Title of the section */
+.section-titlep {
+  font-size: 3.5vw;
+  color:white;
+  margin-bottom: 20px;
+}
+
+/* Description paragraph */
+.section-descriptionp {
+  font-size: 1.6vw;
+  color:white;
+
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+
+/* Container to hold all the project cards */
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* Individual project card styling */
+.project-card {
+  background-color:rgba(0, 0, 0, 0.301);
+  color:white;
+
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border: 1px solid white;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+/* Project card hover effect */
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Title styling inside the project card */
+.project-card h3 {
+  font-size: 20px;
+  color:white;
+
+  margin-bottom: 10px;
+}
+
+/* Description styling inside the project card */
+.project-card p {
+  font-size: 16px;
+  color:white;
+
+}
+
+/* Project image styling */
+.project-image {
+  width: 100%;
+  height: 250px;
+  border-radius: 10px; /* Optional: rounded corners for the image */
+}
+
+
+
+@media (max-width: 768px){
+
+  .section-titlep{
+      font-size: 8vw;
+      color:white;
+
+  margin-bottom: 20px;
+
+  }
+     .section-descriptionp{
+      font-size: 4vw;
+      color: rgb(1, 1, 73);
+      max-width: 800px;
+      margin: 0 auto 40px;
+
+     }
+
+
+
+
+
+  }

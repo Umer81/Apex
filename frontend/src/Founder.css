@@ -1,0 +1,32 @@
+/* Founder card styling */
+.founder-card {
+    background: linear-gradient(135deg, #00265B, #046F32); 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: left;
+    max-width: 600px;
+    color: white;
+    margin: 20px auto;
+  }
+  
+  .founder-card h3 {
+    font-size: 24px;
+
+    margin-bottom: 20px;
+  }
+  
+  .founder-card p {
+    font-size: 16px;
+    line-height: 1.8;
+   
+  }
+
+  @media screen and (max-width: 768px) {
+    .founder-card {
+      margin: 20px 10px;
+
+    }
+    
+  }
+  

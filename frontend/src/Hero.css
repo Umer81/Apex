@@ -1,0 +1,50 @@
+/* Container for the Hero section */
+.hero-container {
+    background-image: url('./assets/1.jpg'); /* Use your imported image */
+    background-size: cover; /* Ensure the background covers the entire section */
+    background-position: center;
+    height: 100vh; /* Set the height of the hero section */
+    position: relative; /* Position for overlay */
+    display: flex;
+    align-items: center; /* Center the content vertically */
+    justify-content: center; /* Center the content horizontally */
+  }
+  
+  /* Overlay styling */
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* Black overlay with transparency */
+    color: white; /* Text color */
+    padding: 20px;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 10px;
+  }
+  
+  .overlay h1 {
+    font-size: 3vw;
+    margin-bottom: 20px;
+    color:#E8D532;
+  }
+  
+  .overlay p {
+    font-size: 1.3vw;
+    line-height: 1.6;
+    color:#E8D532;
+  }
+
+  
+  @media (max-width: 768px){
+    .overlay h1 {
+        font-size: 5vw;
+        margin-bottom: 20px;
+      }
+      .hero-container {
+        padding: 0 10px;
+      }
+      .overlay p {
+        font-size: 4vw;
+        line-height: 1.6;
+      }
+
+  }

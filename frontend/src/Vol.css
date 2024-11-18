@@ -1,0 +1,52 @@
+/* Volunteering Section Styling */
+.volunteering-section {
+    background-image: url('./assets/4.jpg'); /* Set the background image */
+    background-size: cover; /* Ensure the image covers the entire section */
+    background-position: center; /* Center the background image */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 10px auto; /* Center the section */
+    text-align: center; /* Center text */
+    color: white; /* Make text white for readability */
+  }
+  
+  /* Title styling */
+  .volunteering-title {
+    font-size: 2.5rem;
+    color: #fff; /* White color for the title */
+    margin-bottom: 20px;
+  }
+  
+  /* Description styling */
+  .volunteering-description {
+    font-size: 1.2rem; /* Slightly larger text for readability */
+    color: #fff; /* White text color */
+    margin: 15px 0; /* Add spacing between paragraphs */
+  }
+  
+  /* Button styling */
+  .volunteering-button {
+    background-color: rgba(0, 0, 0, 0.886); /* Green button color */
+    color: white; /* White text */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .volunteering-button:hover {
+    background-color: #218838; /* Darker green on hover */
+  }
+  
+  @media screen and (max-width: 768px) {
+    .volunteering-section {
+      margin: 20px 10px; /* Reduce padding on smaller screens */
+    }
+  
+   
+    
+  }

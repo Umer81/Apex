@@ -1,0 +1,68 @@
+/* Section styling for the executive board */
+/* Section styling for the executive board */
+.board-section {
+    padding: 40px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  /* Title of the section */
+  .section-title {
+    font-size: 3.5vw;
+  
+    margin-bottom: 20px;
+  }
+  
+  /* Description paragraph */
+  .section-description {
+    font-size: 1.6vw;
+
+    max-width: 800px;
+    margin: 0 auto 40px;
+  }
+  
+  /* Container to hold all the cards */
+  .board-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  /* Individual card styling */
+  .card { 
+    background: linear-gradient(135deg, #00265B, #046F32); 
+    margin-top: 10px;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Card hover effect */
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Title styling inside the card */
+  .card h3 {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 10px;
+  }
+  
+  /* Name styling inside the card */
+  .card p {
+    font-size: 16px;
+    color: white;
+  }
+  
+  /* Centered card styling */
+  .centered-card {
+    grid-column: 1 / -1; /* Makes this card span all columns, centering it */
+    max-width: 600px; /* Optional: Set max width for better appearance */
+    margin: 0 auto; /* Center the card in the grid */
+  }
+  

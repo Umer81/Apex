@@ -1,0 +1,86 @@
+/* Section styling for the Islamic certificate services with a background image */
+.certificate-section {
+    padding: 40px;
+    background-image: url('./assets/3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white; /* Make text white for readability */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Add a darker overlay to the section to enhance text readability */
+  .certificate-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Dark overlay */
+    z-index: -1;
+  }
+  
+  /* Card styling for each certificate type */
+  .certificate-card {
+    background-color: rgba(255, 255, 255, 0.8); /* Make cards slightly transparent */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 500px;
+    flex: 1;
+    min-width: 300px;
+    transition: transform 0.3s ease;
+    color: black; /* Set card text color to black for contrast */
+  }
+  
+  /* Hover effect for the cards */
+  .certificate-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Title styling */
+  .certificate-card h2 {
+    font-size: 24px;
+    color: #00265B;
+    margin-bottom: 10px;
+  }
+  
+  /* Text content styling */
+  .certificate-card p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  /* List styling for services */
+  .certificate-card ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .certificate-card ul li {
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  /* Responsive layout for mobile screens */
+  @media (max-width: 768px) {
+    .certificate-section {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .certificate-card {
+      max-width: 100%;
+    }
+  }
+  

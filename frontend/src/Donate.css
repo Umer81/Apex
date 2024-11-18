@@ -1,0 +1,65 @@
+/* Donate Section Styling */
+.donate-section {
+    width: 100%; /* Full width */
+    max-width: 1600px; /* Set a max width to avoid overflow */
+    margin: 0 auto; /* Center the section */
+    padding: 50px 20px; /* Add padding with space for smaller screens */
+    background: linear-gradient(135deg, #00265B, #046F32); /* Gradient background */
+    color: white; /* White text color */
+    text-align: center; /* Centered text */
+    box-sizing: border-box; /* Ensure padding is included within the width */
+  }
+  
+  .donate-title {
+    font-size: 3rem; /* Large title */
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .donate-description {
+    font-size: 1.5rem; /* Slightly larger for readability */
+    margin-bottom: 30px;
+    line-height: 1.6; /* Improve readability */
+  }
+  
+  .donate-call-to-action {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    font-weight: bold;
+  }
+  
+  .donate-button {
+    display: inline-block; /* Button-like appearance */
+    padding: 15px 30px; /* Padding for button */
+    background-color: #046F32; /* Dark green background */
+    color: white; /* White text */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1.2rem;
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s ease; /* Smooth transition */
+  }
+  
+  .donate-button:hover {
+    background-color: #005527; /* Darker green on hover */
+  }
+  
+  /* Responsive adjustments for smaller screens */
+  @media (max-width: 768px) {
+    .donate-section {
+      padding: 30px 15px; /* Reduce padding for mobile devices */
+    }
+  
+    .donate-title {
+      font-size: 2.5rem; /* Adjust title size on smaller screens */
+    }
+  
+    .donate-description {
+      font-size: 1.2rem; /* Adjust description size */
+    }
+  
+    .donate-button {
+      font-size: 1rem; /* Slightly smaller button text */
+      padding: 12px 25px; /* Adjust padding on button */
+    }
+  }
+  
