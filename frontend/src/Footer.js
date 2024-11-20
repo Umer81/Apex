@@ -1,6 +1,7 @@
 import React from 'react';
 import './Footer.css'; // Link to the CSS file
 import { Link } from 'react-router-dom'; // Import Link from react-router-dom
+import { FaFacebook, FaInstagram } from 'react-icons/fa'; // Import Facebook and Instagram icons
 import logo from './assets/logo.png'; // Import the logo image
 
 function Footer() {
@@ -10,7 +11,6 @@ function Footer() {
         {/* Footer Logo Section */}
         <div className="footer-logo">
           <img src={logo} alt="Apex Logo" className="footer-logo-img" />
-          
         </div>
 
         {/* Footer Links */}
@@ -20,6 +20,16 @@ function Footer() {
           <li><Link to="/about">About Us</Link></li>
           <li><Link to="/contact">Contact Us</Link></li>
         </ul>
+
+        {/* Social Media Icons */}
+        <div className="footer-social-icons">
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+            <FaFacebook className="social-icon" />
+          </a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+            <FaInstagram className="social-icon" />
+          </a>
+        </div>
       </div>
 
       {/* Footer Bottom Text */}

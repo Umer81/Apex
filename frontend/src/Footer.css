@@ -63,6 +63,24 @@
   margin-top: 20px;
   text-align: center;
 }
+/* Social media icons container */
+.footer-social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* Social media icons */
+.social-icon {
+  font-size: 24px;
+  color: white;
+  transition: color 0.3s;
+}
+
+.social-icon:hover {
+  color: #cccccc; /* Change icon color on hover */
+}
+
 
 /* Responsive styles */
 @media (max-width: 768px) {
