@@ -19,7 +19,7 @@ function Contact() {
     e.preventDefault();
     console.log(process.env.URL);
     try {
-      const response = await fetch(process.env.REACT_APP_URL, {
+      const response = await fetch("https://apex-jdw4.vercel.app/send-email", {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
